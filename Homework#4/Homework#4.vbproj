@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F3D9A28-8069-4D09-8023-B0BF972224FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Homework_4.My.MyApplication</StartupObject>
+    <RootNamespace>Homework_4</RootNamespace>
+    <AssemblyName>Homework#4</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Homework#4.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Homework#4.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssignForm.Designer.vb">
+      <DependentUpon>AssignForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AssignForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseForm.Designer.vb">
+      <DependentUpon>CourseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CourseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseLevelForm.Designer.vb">
+      <DependentUpon>CourseLevelForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CourseLevelForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseSummaryForm.Designer.vb">
+      <DependentUpon>CourseSummaryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CourseSummaryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW3_Project_SolutionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HW3_Project_SolutionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HW3_Project_SolutionDataSet.vb">
+      <DependentUpon>HW3_Project_SolutionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorForm.Designer.vb">
+      <DependentUpon>InstructorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorSearchForm.Designer.vb">
+      <DependentUpon>InstructorSearchForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorSearchForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NewCourseForm.Designer.vb">
+      <DependentUpon>NewCourseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewCourseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeriodForm.Designer.vb">
+      <DependentUpon>PeriodForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PeriodForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.vb">
+      <DependentUpon>RegisterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomForm.Designer.vb">
+      <DependentUpon>RoomForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RoomForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleSearchForm.Designer.vb">
+      <DependentUpon>ScheduleSearchForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleSearchForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentForm.Designer.vb">
+      <DependentUpon>StudentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentSearchForm.Designer.vb">
+      <DependentUpon>StudentSearchForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentSearchForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnassignedForm.Designer.vb">
+      <DependentUpon>UnassignedForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnassignedForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AssignForm.resx">
+      <DependentUpon>AssignForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseForm.resx">
+      <DependentUpon>CourseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseLevelForm.resx">
+      <DependentUpon>CourseLevelForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseSummaryForm.resx">
+      <DependentUpon>CourseSummaryForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorForm.resx">
+      <DependentUpon>InstructorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorSearchForm.resx">
+      <DependentUpon>InstructorSearchForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCourseForm.resx">
+      <DependentUpon>NewCourseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeriodForm.resx">
+      <DependentUpon>PeriodForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomForm.resx">
+      <DependentUpon>RoomForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleSearchForm.resx">
+      <DependentUpon>ScheduleSearchForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentForm.resx">
+      <DependentUpon>StudentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentSearchForm.resx">
+      <DependentUpon>StudentSearchForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnassignedForm.resx">
+      <DependentUpon>UnassignedForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HW3_Project_SolutionDataSet.xsc">
+      <DependentUpon>HW3_Project_SolutionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HW3_Project_SolutionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HW3_Project_SolutionDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HW3_Project_SolutionDataSet.xss">
+      <DependentUpon>HW3_Project_SolutionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HW3_Project_Solution.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
